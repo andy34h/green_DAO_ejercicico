@@ -1,0 +1,2 @@
+include ':app', ':greendao-gen'
+rootProject.name='green_DAO_ejercicico'

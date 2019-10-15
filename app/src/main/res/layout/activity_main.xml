@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="ID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edtUsuario"
+        android:layout_alignTop="@+id/txtID"
+        android:layout_toRightOf="@+id/btnComprobar"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtID"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_x="85dp"
+        android:layout_y="124dp"
+        android:text="Usuario"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsuario"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_below="@+id/edtUsuario"
+        android:layout_marginTop="33dp"
+        android:padding="1dp"
+        android:paddingTop="1dp"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="24dp"
+        android:layout_x="68dp"
+        android:layout_y="324dp"
+        android:ems="10"
+        android:password="true" />
+    <TextView
+        android:id="@+id/txtListaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginTop="33dp"
+        android:padding="1dp"
+        android:paddingTop="1dp"
+        android:text="Datos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:layout_below="@+id/txtListaa"
+        android:layout_marginTop="33dp"
+        android:padding="1dp"
+        android:paddingTop="1dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBorrar"
+        android:layout_alignParentLeft="true"
+        android:onClick="iniciarSesion"
+        android:text="Comprobar" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnComprobar"
+        android:layout_alignParentBottom="true"
+        android:minHeight="30dip"
+        android:onClick="borrarRegistro"
+        android:text="Borrar" />
+
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBorrar"
+        android:layout_alignRight="@+id/edtPassword"
+        android:onClick="registrarCredenciales"
+        android:text="Guardar" />
+
+
+
+
+
+</RelativeLayout>
